@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana7.Vistas.Elemento">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Actualizar - Eliminar" FontSize="18" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="TxtId" Placeholder="Id" IsReadOnly="True"/>
+            <Entry x:Name="TxtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="TxtUsuario" Placeholder="Usuario"/>
+            <Entry x:Name="TxtContrasena" Placeholder="Contrasena"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="BtnActualizar" Text="Actualizar" Clicked="BtnActualizar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="BtnEliminar" Text="Eliminar" Clicked="BtnEliminar_Clicked" Grid.Row="0" Grid.Column="1"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
